@@ -1,0 +1,14 @@
+- @PAGE_TITLE = "New Headline"
+
+%h1 New Headline
+
+= semantic_form_for @headline, :html => {:class => "form-horizontal"} do |f|
+    = f.input :intro, :required => false, :input_html => {:rows => 5}
+    
+    = f.inputs :name => "Article" do
+        = f.input :url
+        = f.input :title
+        = f.input :excerpt, :input_html => {:rows => 5}
+        
+    = f.action :submit
+    

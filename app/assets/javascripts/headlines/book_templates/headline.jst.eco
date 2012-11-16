@@ -1,0 +1,31 @@
+<style><%= JST["headlines/book_templates/style"]() %></style>
+<h1>Headlines</h1>
+<div style="display:inline;float:left;width:72px;margin:4px">
+    <div id="drop">Drop Thumb</div>
+    <button id="desc_select">Grab Selection</button>
+    <button id="save">Save Headline</button>
+</div>
+<div class="formtastic" style="display:inline;float:left;margin: 4px;width:292px">
+<fieldset>
+    <legend>Create Headline</legend>
+    <ol>
+        <li class="input text">
+            <label for="intro" class="label">Intro</label>
+            <textarea id="intro" name="intro" rows=6><%= @h.intro %></textarea>
+        </li>
+        <li class="input stringish">
+            <label for="title" class="label">Title</label>
+            <input id="title" name="title" value="<%= @h.title %>"/>
+        </li>
+        <li class="input stringish">
+            <label for="url" class="label">URL</label>
+            <input id="url" name="url" value="<%= @h.url %>"/>
+        </li>
+        <li class="input text">
+            <label for="descript" class="label">Excerpt</label>
+            <textarea id="descript" name="descript" rows="4"><%= @h.descript %></textarea>
+        </li>
+    </ol>
+</fieldset>
+</div>
+<hr style="clear:both;"/>

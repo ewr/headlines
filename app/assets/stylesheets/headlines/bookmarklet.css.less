@@ -1,0 +1,65 @@
+@orange: #d1570d;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+	font: normal 18px/18px sans-serif;
+	margin-bottom: 4px;
+	padding: 0;
+	background: @orange;
+	color: #fff;
+}
+
+#drop {
+    width: 72px;
+    height: 72px;
+    overflow: hidden;
+    background: #ffc;
+}
+
+.formtastic {
+    font-size: 11px;
+	legend {
+		font: normal 14px/16px sans-serif;
+		color: @orange;
+	}
+	
+	.input {
+        margin-bottom: 4px;
+	    
+    	.inline-hints {
+    		color: #777 !important;
+    		font-size: 9px;
+    		margin-top: 2px;
+    		margin-bottom: 2px;
+    	}
+    }
+	
+	
+	ol {
+		background: rgba(60,60,60,.2);
+		padding-left: 6px;
+	}
+	
+	label {
+		font-size: 14px;
+	}
+	
+	ol ol {
+	    background: inherit;
+	    padding: inherit;
+	}
+	
+	li fieldset legend {
+	    font: inherit;
+	    color: inherit;
+	}
+	
+	.required label {
+		font-weight: bold;
+	}
+	
+}
